@@ -1,0 +1,24 @@
+MASRUR AI ACADEMY — DEPLOYMENT NOTES
+
+Included features
+- Responsive learning website for Classes 9–10, Classes 11–12, and NEET preparation.
+- Chapter/topic study desk: chapter explanation, question solving, chapter Q&A practice, and fresh 10-question MCQ generation.
+- Subject choices include school subjects, Class 11–12 Physics/Chemistry/Biology/Mathematics/English Core/Alternative English, and NEET Physics/Chemistry/Biology.
+- Official links to NCERT and Assam board information.
+- Gemini AI serverless endpoint. The API key is not placed in public HTML.
+
+IMPORTANT: This ZIP is a website project, not a public live link. To make the AI work, it must be deployed to a host that supports Netlify Functions and configured with an API key.
+
+DEPLOY (free-tier availability and quotas can change)
+1. Download/extract this ZIP.
+2. Create a GitHub account and a new repository; upload the extracted project files while preserving the netlify/functions/chat.mjs path.
+3. Create a Gemini API key from https://aistudio.google.com/apikey . Do NOT paste it into the website code, a public file, or this chat.
+4. Sign in to https://www.netlify.com/ and import the GitHub repository as a new site.
+5. In Netlify site settings, add environment variable GEMINI_API_KEY and paste the key there privately.
+6. Trigger a redeploy. Open the published Netlify URL and test the AI Tutor and Study Desk.
+
+CURRICULUM & COPYRIGHT
+- The chapter field accepts any chapter/topic, so students can request help across chapters. AI outputs are generated on demand and should be checked against the current official textbook/syllabus.
+- NCERT textbooks are copyrighted. This site links to official NCERT books and creates original explanations/practice instead of hosting copied textbook files or reproducing whole answer keys.
+- ASSEB Division II subjects/syllabus can change; verify the current official notices and the school's prescribed book list. This is a starter platform and does not yet contain a human-verified static catalogue of every chapter/question in every current textbook.
+- “Unlimited” MCQ generation cannot be guaranteed: AI use is subject to provider quotas, rate limits, and possible charges. Start with small tests and review provider billing/usage settings.
