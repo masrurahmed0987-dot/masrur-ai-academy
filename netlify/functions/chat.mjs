@@ -4,7 +4,8 @@ export default async (req) => {
   }
 
   try {
-    const { question, history = [] } = await req.json();
+    const { message, history = [] } = await req.json();
+const question = message;
 
     if (!question || typeof question !== "string") {
       return Response.json(
